@@ -1,0 +1,267 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6DA94997-0407-46F2-8944-FD5496920A0D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Laboratory_work_in_electrical_engineering</RootNamespace>
+    <AssemblyName>Laboratory work in electrical engineering</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="ViewModels\Connection\Connection.cs" />
+    <Compile Include="ViewModels\Connection\ConnectionAdorner.cs" />
+    <Compile Include="ViewModels\Connection\Connector.cs" />
+    <Compile Include="ViewModels\Connection\ConnectorAdorner.cs" />
+    <Compile Include="ViewModels\Connection\DesignerCanvas.cs" />
+    <Compile Include="ViewModels\Connection\DesignerItem.cs" />
+    <Compile Include="ViewModels\Connection\IGroupable.cs" />
+    <Compile Include="ViewModels\Connection\ISelectable.cs" />
+    <Compile Include="ViewModels\Connection\PathFinder.cs" />
+    <Compile Include="ViewModels\Connection\RubberbandAdorner.cs" />
+    <Compile Include="ViewModels\Connection\SelectionService.cs" />
+    <Compile Include="ViewModels\Connection\Toolbox.cs" />
+    <Compile Include="ViewModels\Connection\ToolboxItem.cs" />
+    <Compile Include="ViewModels\Controls\DragThumb.cs" />
+    <Compile Include="ViewModels\Controls\RelativePositionPanel.cs" />
+    <Compile Include="ViewModels\Controls\ResizeThumb.cs" />
+    <Compile Include="ViewModels\Logic\ICalculate.cs" />
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="Models\Templates\ApplicationToolbar.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Models\Templates\Connection.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Models\Templates\DesignerItem.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Models\Templates\Stencil\FlowCharrSnecil.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Models\Templates\Stencil\ShapeStencils.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Models\Templates\Style\Expander.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Models\Templates\Style\GroupBox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Models\Templates\Style\ScrolBar.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Models\Templates\Style\ScrollViewer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Models\Templates\Style\Shared.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Models\Templates\Style\TollBar.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Models\Templates\Style\ToolTip.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Models\Templates\Tables\TablesStyle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Models\Templates\Toolbox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Models\Templates\ToolboxItem.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Views\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Delete.png" />
+    <Resource Include="Images\GenericDocument.png" />
+    <Resource Include="Images\information.png" />
+    <Resource Include="Images\Instruction.png" />
+    <Resource Include="Images\OpenFolder.png" />
+    <Resource Include="Images\PasteBig.png" />
+    <Resource Include="Images\Save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Formulas\1.png" />
+    <Resource Include="Images\Formulas\10.png" />
+    <Resource Include="Images\Formulas\11.png" />
+    <Resource Include="Images\Formulas\12.png" />
+    <Resource Include="Images\Formulas\13.png" />
+    <Resource Include="Images\Formulas\14.png" />
+    <Resource Include="Images\Formulas\15.png" />
+    <Resource Include="Images\Formulas\16.png" />
+    <Resource Include="Images\Formulas\17.png" />
+    <Resource Include="Images\Formulas\18.png" />
+    <Resource Include="Images\Formulas\19.png" />
+    <Resource Include="Images\Formulas\2.png" />
+    <Resource Include="Images\Formulas\20.png" />
+    <Resource Include="Images\Formulas\21.png" />
+    <Resource Include="Images\Formulas\3.png" />
+    <Resource Include="Images\Formulas\4.png" />
+    <Resource Include="Images\Formulas\5.png" />
+    <Resource Include="Images\Formulas\6.png" />
+    <Resource Include="Images\Formulas\7.png" />
+    <Resource Include="Images\Formulas\8.png" />
+    <Resource Include="Images\Formulas\9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\table.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\stars.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Stars\A.png" />
+    <Resource Include="Images\Stars\B.png" />
+    <Resource Include="Images\Stars\big_switch_down.png" />
+    <Resource Include="Images\Stars\big_switch_up.png" />
+    <Resource Include="Images\Stars\C.png" />
+    <Resource Include="Images\Stars\connection.png" />
+    <Resource Include="Images\Stars\connection_green.png" />
+    <Resource Include="Images\Stars\disconnect.png" />
+    <Resource Include="Images\Stars\disconnect_green.png" />
+    <Resource Include="Images\Stars\disconnect_red.png" />
+    <Resource Include="Images\Stars\disconnect_yellow.png" />
+    <Resource Include="Images\Stars\instr1.png" />
+    <Resource Include="Images\Stars\instr2.png" />
+    <Resource Include="Images\Stars\instr3.png" />
+    <Resource Include="Images\Stars\instr4.png" />
+    <Resource Include="Images\Stars\instr5.png" />
+    <Resource Include="Images\Stars\instr6.png" />
+    <Resource Include="Images\Stars\instr7.png" />
+    <Resource Include="Images\Stars\LightGreenOf.bmp" />
+    <Resource Include="Images\Stars\LightGreenOn.bmp" />
+    <Resource Include="Images\Stars\LightRedOf.bmp" />
+    <Resource Include="Images\Stars\LightRedOn.bmp" />
+    <Resource Include="Images\Stars\LightYellowOf.jpg" />
+    <Resource Include="Images\Stars\LightYellowOn.jpg" />
+    <Resource Include="Images\Stars\N.png" />
+    <Resource Include="Images\Stars\next.png" />
+    <Resource Include="Images\Stars\not.png" />
+    <Resource Include="Images\Stars\of.png" />
+    <Resource Include="Images\Stars\ofRedSelected.png" />
+    <Resource Include="Images\Stars\ofSelected.png" />
+    <Resource Include="Images\Stars\on.png" />
+    <Resource Include="Images\Stars\onRedSelected.png" />
+    <Resource Include="Images\Stars\onSelected.png" />
+    <Resource Include="Images\Stars\RedOf.png" />
+    <Resource Include="Images\Stars\RedOn.png" />
+    <Resource Include="Images\Stars\reset.png" />
+    <Resource Include="Images\Stars\select_big_switch_down.png" />
+    <Resource Include="Images\Stars\select_big_switch_up.png" />
+    <Resource Include="Images\Stars\select_connection.png" />
+    <Resource Include="Images\Stars\select_connection_green.png" />
+    <Resource Include="Images\Stars\select_connection_red.png" />
+    <Resource Include="Images\Stars\select_connection_yellow.png" />
+    <Resource Include="Images\Stars\select_connect_green.png" />
+    <Resource Include="Images\Stars\select_disconnect.png" />
+    <Resource Include="Images\Stars\select_disconnect_green.png" />
+    <Resource Include="Images\Stars\select_disconnect_red.png" />
+    <Resource Include="Images\Stars\select_disconnect_yellow.png" />
+    <Resource Include="Images\Stars\stars.ico" />
+    <Resource Include="Images\Stars\yes.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
