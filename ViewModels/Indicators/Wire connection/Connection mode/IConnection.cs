@@ -1,4 +1,4 @@
-﻿using Laboratory_work_in_electrical_engineering.ViewModels.Connection;
+﻿
 using Laboratory_work_in_electrical_engineering.ViewModels.Connections;
 using Laboratory_work_in_electrical_engineering.ViewModels.Indicators.Wire_connection.Data_connection;
 using System;

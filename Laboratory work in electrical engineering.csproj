@@ -88,6 +88,24 @@
     <Compile Include="Views\User Control\ArGauge\Gauge.xaml.cs">
       <DependentUpon>Gauge.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\User Control\Lamps\Lamps.xaml.cs">
+      <DependentUpon>Lamps.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\User Control\Lamps\LampsLayout.xaml.cs">
+      <DependentUpon>LampsLayout.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\User Control\Main indicator\MainIndicators.xaml.cs">
+      <DependentUpon>MainIndicators.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\User Control\Main indicator\MainIndicatorsLayout.xaml.cs">
+      <DependentUpon>MainIndicatorsLayout.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\User Control\Switch indicator\SwitchIndicator.xaml.cs">
+      <DependentUpon>SwitchIndicator.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\User Control\Switch indicator\SwitchIndicatorsLayout.xaml.cs">
+      <DependentUpon>SwitchIndicatorsLayout.xaml</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -172,6 +190,30 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Views\User Control\Lamps\Lamps.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\User Control\Lamps\LampsLayout.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\User Control\Main indicator\MainIndicators.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\User Control\Main indicator\MainIndicatorsLayout.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\User Control\Switch indicator\SwitchIndicator.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\User Control\Switch indicator\SwitchIndicatorsLayout.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -201,9 +243,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="ViewModels\Indicators\Calculation of indicators\" />
-    <Folder Include="Views\User Control\Lamps\" />
-    <Folder Include="Views\User Control\Main indicator\" />
-    <Folder Include="Views\User Control\Switch indicator\" />
     <Folder Include="Views\User Control\Transform\" />
     <Folder Include="Views\User Control\Voltmeter\" />
     <Folder Include="Views\User Control\Watmeter\" />
