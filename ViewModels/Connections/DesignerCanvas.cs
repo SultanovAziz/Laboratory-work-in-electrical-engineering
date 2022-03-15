@@ -11,7 +11,7 @@ using System.Windows.Input;
 using System.Windows.Markup;
 using System.Xml;
 
-namespace Laboratory_work_in_electrical_engineering.ViewModels.Connection
+namespace Laboratory_work_in_electrical_engineering.ViewModels.Connections
 {
  public partial class DesignerCanvas :  Canvas
     {

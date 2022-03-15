@@ -56,22 +56,28 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="ViewModels\Connection\Connection.cs" />
-    <Compile Include="ViewModels\Connection\ConnectionAdorner.cs" />
-    <Compile Include="ViewModels\Connection\Connector.cs" />
-    <Compile Include="ViewModels\Connection\ConnectorAdorner.cs" />
-    <Compile Include="ViewModels\Connection\DesignerCanvas.cs" />
-    <Compile Include="ViewModels\Connection\DesignerItem.cs" />
-    <Compile Include="ViewModels\Connection\IGroupable.cs" />
-    <Compile Include="ViewModels\Connection\ISelectable.cs" />
-    <Compile Include="ViewModels\Connection\PathFinder.cs" />
-    <Compile Include="ViewModels\Connection\RubberbandAdorner.cs" />
-    <Compile Include="ViewModels\Connection\SelectionService.cs" />
-    <Compile Include="ViewModels\Connection\Toolbox.cs" />
-    <Compile Include="ViewModels\Connection\ToolboxItem.cs" />
+    <Compile Include="ViewModels\Connections\Connection.cs" />
+    <Compile Include="ViewModels\Connections\ConnectionAdorner.cs" />
+    <Compile Include="ViewModels\Connections\Connector.cs" />
+    <Compile Include="ViewModels\Connections\ConnectorAdorner.cs" />
+    <Compile Include="ViewModels\Connections\DesignerCanvas.cs" />
+    <Compile Include="ViewModels\Connections\DesignerItem.cs" />
+    <Compile Include="ViewModels\Connections\IGroupable.cs" />
+    <Compile Include="ViewModels\Connections\ISelectable.cs" />
+    <Compile Include="ViewModels\Connections\PathFinder.cs" />
+    <Compile Include="ViewModels\Connections\RubberbandAdorner.cs" />
+    <Compile Include="ViewModels\Connections\SelectionService.cs" />
+    <Compile Include="ViewModels\Connections\Toolbox.cs" />
+    <Compile Include="ViewModels\Connections\ToolboxItem.cs" />
     <Compile Include="ViewModels\Controls\DragThumb.cs" />
     <Compile Include="ViewModels\Controls\RelativePositionPanel.cs" />
     <Compile Include="ViewModels\Controls\ResizeThumb.cs" />
+    <Compile Include="ViewModels\Indicators\Wire connection\Connection mode\BreackLinearMode.cs" />
+    <Compile Include="ViewModels\Indicators\Wire connection\Connection mode\BreackOfNeutralMode.cs" />
+    <Compile Include="ViewModels\Indicators\Wire connection\Connection mode\BreackOfNeytralAndLinearMode.cs" />
+    <Compile Include="ViewModels\Indicators\Wire connection\Connection mode\IConnection.cs" />
+    <Compile Include="ViewModels\Indicators\Wire connection\Connection mode\NormalMode.cs" />
+    <Compile Include="ViewModels\Indicators\Wire connection\Connection mode\SymmetricAndNotConnection.cs" />
     <Compile Include="ViewModels\Indicators\Wire connection\Data connection\DataConnection.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>

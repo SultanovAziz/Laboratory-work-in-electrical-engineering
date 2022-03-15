@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Windows;
 using System.Windows.Controls;
 
-namespace Laboratory_work_in_electrical_engineering.ViewModels.Connection
+namespace Laboratory_work_in_electrical_engineering.ViewModels.Connections
 {
     // Note: I couldn't find a useful open source library that does
     // orthogonal routing so started to write something on my own.

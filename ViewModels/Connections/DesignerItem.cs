@@ -9,7 +9,7 @@ using System.Windows.Controls;
 using System.Windows.Input;
 using System.Windows.Media;
 
-namespace Laboratory_work_in_electrical_engineering.ViewModels.Connection
+namespace Laboratory_work_in_electrical_engineering.ViewModels.Connections
 {
 
     //These attributes identify the types of the named parts that are used for templating
