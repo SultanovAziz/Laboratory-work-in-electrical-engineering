@@ -79,6 +79,15 @@
     <Compile Include="ViewModels\Indicators\Wire connection\Connection mode\NormalMode.cs" />
     <Compile Include="ViewModels\Indicators\Wire connection\Connection mode\SymmetricAndNotConnection.cs" />
     <Compile Include="ViewModels\Indicators\Wire connection\Data connection\DataConnection.cs" />
+    <Compile Include="Views\User Control\Amber\Amber.xaml.cs">
+      <DependentUpon>Amber.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\User Control\Amber\AmberLayout.xaml.cs">
+      <DependentUpon>AmberLayout.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\User Control\ArGauge\Gauge.xaml.cs">
+      <DependentUpon>Gauge.xaml</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -151,6 +160,18 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Views\User Control\Amber\Amber.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\User Control\Amber\AmberLayout.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\User Control\ArGauge\Gauge.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -180,7 +201,12 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="ViewModels\Indicators\Calculation of indicators\" />
-    <Folder Include="Views\" />
+    <Folder Include="Views\User Control\Lamps\" />
+    <Folder Include="Views\User Control\Main indicator\" />
+    <Folder Include="Views\User Control\Switch indicator\" />
+    <Folder Include="Views\User Control\Transform\" />
+    <Folder Include="Views\User Control\Voltmeter\" />
+    <Folder Include="Views\User Control\Watmeter\" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\Delete.png" />

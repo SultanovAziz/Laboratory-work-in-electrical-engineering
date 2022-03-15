@@ -1,0 +1,60 @@
+﻿<UserControl x:Class="Laboratory_work_in_electrical_engineering.Views.User_Control.Amber.Amber"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:gauge="clr-namespace:Laboratory_work_in_electrical_engineering.Views.User_Control.ArGauge"
+             mc:Ignorable="d" 
+        d:DesignHeight="450" d:DesignWidth="800">
+
+    <Viewbox Stretch="Uniform" xmlns:ss="clr-namespace:System;assembly=mscorlib" Margin="10">
+        <Viewbox.Tag>
+            <ss:Int64>1640351143</ss:Int64>
+        </Viewbox.Tag>
+
+        <Canvas x:Name="Canvas" Tag="#00000000,#FF008000,Original,0,None" LayoutTransform="Identity" Width="984" Height="998">
+            <Polygon Points="154,28 869,28 907,36 940,58 962,91 970,129 970,844 962,883 940,915 907,938 869,946 154,946 115,938 83,915 60,883 52,844 52,129 60,91 83,58 115,36 154,28" Fill="#FF0000BF" Stroke="#FF000000" StrokeThickness="3" />
+            <Polygon Points="129,52 844,52 883,60 915,83 938,115 946,154 946,869 938,907 915,940 883,962 844,970 129,970 91,962 58,940 36,907 28,869 28,154 36,115 58,83 91,60 129,52" Fill="#FF7F7FFF" Stroke="#FF000000" StrokeThickness="3" />
+            <Polygon Points="168,144 805,144 840,158 854,193 854,557 840,589 805,604 168,604 134,589 119,557 119,193 134,158 168,144" Fill="#FF0000BF" Stroke="#FF000000" StrokeThickness="3" Canvas.Left="-2" Canvas.Top="332" />
+            <Polygon Points="182,160 791,160 824,172 836,205 836,545 824,577 791,589 182,589 150,577 135,545 135,205 150,172 182,160" Fill="#FFE8FF69" Stroke="#FF000000" StrokeThickness="3" Canvas.Left="-2" Canvas.Top="329" />
+
+            <Line X1="-150" Y1="200" X2="770" Y2="200" Stroke="Black" StrokeThickness="7" Height="221" Width="912" Canvas.Left="175" Canvas.Top="143" />
+            <gauge:Gauge Canvas.Left="58" Canvas.Top="499" Height="414" Width="982" x:Name="Value" RenderTransformOrigin="0.569,0.477"/>
+
+
+            <TextBlock x:Name="txt1"  Text="A" FontSize="120" FontWeight="Bold" Height="140" Width="157" Canvas.Left="411" Canvas.Top="763"   />
+            <TextBlock x:Name="txt2"  FontSize="120" FontWeight="Bold" Height="140" Width="157" Canvas.Left="497" Canvas.Top="775"  />
+            <Border  CornerRadius= "100,100,100,100" BorderBrush="{x:Null}"  BorderThickness="3,3,3,3" Background="#FF7F7FFF" Canvas.Left="98" Canvas.Top="102" Height="196" Width="152"  >
+                <Border Background="White" CornerRadius= "90 90 90 90" BorderThickness= "2 2 2 2" BorderBrush= "White" Canvas.Left= "92" Canvas.Top= "130" Height= "130" Width= "116" Margin="-21,-11,51,71"  />
+            </Border >
+            <Border  CornerRadius= "100,100,100,100" BorderBrush="{x:Null}"  BorderThickness="3,3,3,3" Background="#FF7F7FFF" Canvas.Left="316" Canvas.Top="96" Height="196" Width="152"  >
+                <Border Background="White" CornerRadius= "90 90 90 90" BorderThickness= "2 2 2 2" BorderBrush= "White" Canvas.Left= "92" Canvas.Top= "130" Height= "130" Width= "116" Margin="-21,-11,51,71"  />
+            </Border >
+            <Line X1="-150" Y1="200" X2="770" Y2="200" Stroke="Black" StrokeThickness="7" Height="314" Width="456" Canvas.Left="30" Canvas.Top="52" />
+            <Line X1="-150" Y1="200" X2="770" Y2="200" Stroke="Black" StrokeThickness="7" Height="300" Width="202" Canvas.Left="152" Canvas.Top="288" RenderTransformOrigin="0.5,0.5" >
+                <Line.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="90"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Line.RenderTransform>
+            </Line>
+            <Border CornerRadius="50 50 50 50" Background="Black" Width="82" Height="81" BorderThickness="2 2 2 2" BorderBrush="Black" Canvas.Left="698" Canvas.Top="109"  >
+                <Border Background="Black" CornerRadius="40 40 40 40" BorderThickness="2 2 2 2" BorderBrush="Black" Margin="6,5"/>
+            </Border>
+            <Border CornerRadius="50 50 50 50" Background="Black" Width="82" Height="81" BorderThickness="2 2 2 2" BorderBrush="Black" Canvas.Left="811" Canvas.Top="109"  >
+                <Border Background="Gray" CornerRadius="120 120 120 120" BorderThickness="2 2 2 2" BorderBrush="Black" Margin="6,5"/>
+            </Border>
+            <Border CornerRadius="50 50 50 50"  Background="Black" Width="82" Height="81" BorderThickness="2 2 2 2" BorderBrush="Black" Canvas.Left="700" Canvas.Top="228"  >
+                <Border Background="Black" CornerRadius="40 40 40 40" BorderThickness="2 2 2 2" BorderBrush="Black" Margin="6,5"/>
+            </Border>
+            <Border CornerRadius="50 50 50 50" Background="Black" Width="82" Height="81" BorderThickness="2 2 2 2" BorderBrush="Black" Canvas.Left="810" Canvas.Top="230"  >
+                <Border Background="Gray" CornerRadius="40 40 40 40" BorderThickness="2 2 2 2" BorderBrush="Black" Margin="6,5"/>
+            </Border>
+
+        </Canvas>
+    </Viewbox>
+</UserControl>
+
